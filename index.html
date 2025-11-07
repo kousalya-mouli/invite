@@ -1,12 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>title</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mouli ❤️ Kousalya — Wedding Invitation</title>
+  <meta name="description" content="You're invited to celebrate our wedding. Join us for a day of love, laughter, and happily ever after!" />
+  <meta property="og:title" content="Mouli ❤️ Kousalya — Wedding Invitation" />
+  <meta property="og:description" content="Save the date and celebrate with us in Tiruvannamalai." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1596347120126-c75f9a406aa2?q=80&w=1200&auto=format&fit=crop" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --theme-maroon: #7b1e26;
+      --theme-gold: #c9a227;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .script { font-family: 'Great Vibes', cursive; }
+    /* Subtle gold gradient border for cards */
+    .gold-ring { position: relative; }
+    .gold-ring::before {
+      content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: 1.25rem;
+      background: linear-gradient(135deg, rgba(201,162,39,.8), rgba(255,255,255,.1), rgba(201,162,39,.8));
+      -webkit-mask: linear-gradient(#000,#000) content-box, linear-gradient(#000,#000);
+      -webkit-mask-composite: xor; mask-composite: exclude; padding: 1px; display: block;
+    }
+    /* Fade/slide in */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .8s ease, transform .8s ease; }
+    .reveal.show { opacity: 1; transform: none; }
+  </style>
 </head>
-<body>
-   <div class="wrapper"></div>
+<body class="bg-rose-50 text-slate-800">
+  <!-- NAV -->
+  <!-- <header class="fixed top-0 inset-x-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-rose-50/60 border-b border-rose-200/60">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        Minimal gopuram mark -->
+        <!-- <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 6l6 6H26l6-6Zm0 8l8 8H24l8-8Zm0 10l10 10H22l10-10Zm0 12l12 12H20L32 36Zm0 14l14 14H18l14-14Z" fill="url(#g)"/>
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#c9a227"/>
+              <stop offset="1" stop-color="#7b1e26"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="font-semibold tracking-wide" style="color: var(--theme-maroon)">Mouli ♥ Priya</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-4 text-sm">
+        <a class="hover:text-rose-700" href="#story">Story</a>
+        <a class="hover:text-rose-700" href="#events">Events</a>
+        <a class="hover:text-rose-700" href="#rsvp">RSVP</a>
+        <a class="hover:text-rose-700" href="#gallery">Gallery</a>
+        <a class="hover:text-rose-700" href="#contact">Contact</a>
+      </nav>
+      <a href="#rsvp" class="hidden sm:inline-flex rounded-full px-4 py-2 text-white" style="background: var(--theme-maroon)">RSVP</a>
+    </div>
+  </header> --> 
+
+  <!-- HERO -->
+  <section id="home" class="relative pt-24">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2000&auto=format&fit=crop" alt="Temple" class="w-full h-full object-cover"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-rose-50"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 py-14 text-center text-white">
+      <p class="script text-5xl sm:text-6xl drop-shadow #f43f5e">Wedding Invitation</p>
+      <div class="mt-9"></div>
+      <p class="script text-6xl sm:text-6xl drop-shadow ">Mouli & Kousalya</p>
+      <!-- <p class="mt-2 text-sm sm:text-base">December 15, 2025 • Tiruvannamalai, Tamil Nadu</p> -->
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
+        <div class="backdrop-blur bg-white/10 rounded-xl p-3">
+          <p class="text-xs uppercase tracking-wide">Reception</p>
+          <p class="font-semibold">Nov 30, 2025</p>
+        </div>
+        <div class="backdrop-blur bg-white/10 rounded-xl p-3">
+          <p class="text-xs uppercase tracking-wide">Wedding</p>
+          <p class="font-semibold">Dec 01, 2025</p>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#location" class="inline-flex rounded-full px-6 py-3 font-semibold" style="background: var(--theme-gold); color:#3b2d0b">Get Directions</a>
+        <!-- <a href="#events" class="inline-flex rounded-full px-6 py-3 font-semibold bg-white/90 text-slate-900">View Events</a> -->
+      </div>
+      <div class="mt-14">
+        <p class="uppercase tracking-widest text-xs text-black/90">Countdown</p>
+        <div id="countdown" class="mt-2 flex items-center justify-center gap-3 text-center">
+          <div class="w-20 sm:w-24 rounded-xl bg-white/90 text-slate-900 p-3">
+            <div class="text-2xl font-bold" id="d">0</div>
+            <div class="text-xs uppercase">Days</div>
+          </div>
+          <div class="w-20 sm:w-24 rounded-xl bg-white/90 text-slate-900 p-3">
+            <div class="text-2xl font-bold" id="h">0</div>
+            <div class="text-xs uppercase">Hours</div>
+          </div>
+          <div class="w-20 sm:w-24 rounded-xl bg-white/90 text-slate-900 p-3">
+            <div class="text-2xl font-bold" id="m">0</div>
+            <div class="text-xs uppercase">Minutes</div>
+          </div>
+          <div class="w-20 sm:w-24 rounded-xl bg-white/90 text-slate-900 p-3">
+            <div class="text-2xl font-bold" id="s">0</div>
+            <div class="text-xs uppercase">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="py-16 sm:py-24">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="reveal text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold" style="color: var(--theme-maroon)">Our Story</h2>
+        <p class="mt-3 text-slate-600 max-w-3xl mx-auto">Two paths converged in a city of a thousand lamps. From that first conversation to countless shared sunsets, we've been writing a story of friendship, family, and forever. We can't wait to celebrate this next chapter with you.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="reveal gold-ring rounded-2xl bg-white p-5">
+          <img class="rounded-xl w-full h-44 object-cover" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop" alt="First meet" />
+          <h3 class="mt-4 font-semibold">First Hello</h3>
+          <p class="text-sm text-slate-600">A chance meeting that never felt like chance.</p>
+        </div>
+        <div class="reveal gold-ring rounded-2xl bg-white p-5">
+          <img class="rounded-xl w-full h-44 object-cover" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop" alt="Journey" />
+          <h3 class="mt-4 font-semibold">Growing Together</h3>
+          <p class="text-sm text-slate-600">Adventures, chai dates, and endless laughter.</p>
+        </div>
+        <div class="reveal gold-ring rounded-2xl bg-white p-5">
+          <img class="rounded-xl w-full h-44 object-cover" src="https://images.unsplash.com/photo-1460364157752-926555421a7e?q=80&w=1200&auto=format&fit=crop" alt="Proposal" />
+          <h3 class="mt-4 font-semibold">The Promise</h3>
+          <p class="text-sm text-slate-600">A quiet proposal and a louder yes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="py-16 sm:py-24 bg-gradient-to-b from-rose-100 to-rose-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="reveal text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold" style="color: var(--theme-maroon)">Events</h2>
+        <p class="mt-3 text-slate-600">Join us for the celebrations</p>
+      </div>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="reveal gold-ring rounded-2xl bg-white p-6">
+          <p class="text-xs uppercase tracking-widest text-rose-700">Mehendi</p>
+          <h3 class="mt-1 font-semibold">December 14, 2025 • 5:00 PM</h3>
+          <p class="text-slate-600 text-sm">Family home, Tiruvannamalai</p>
+        </div>
+        <div class="reveal gold-ring rounded-2xl bg-white p-6">
+          <p class="text-xs uppercase tracking-widest text-rose-700">Wedding</p>
+          <h3 class="mt-1 font-semibold">December 15, 2025 • 9:00 AM</h3>
+          <p class="text-slate-600 text-sm">Sri Arunachaleswarar Temple</p>
+        </div>
+        <div class="reveal gold-ring rounded-2xl bg-white p-6">
+          <p class="text-xs uppercase tracking-widest text-rose-700">Reception</p>
+          <h3 class="mt-1 font-semibold">December 15, 2025 • 6:30 PM</h3>
+          <p class="text-slate-600 text-sm">Banquet Hall, Tiruvannamalai</p>
+        </div>
+      </div>
+      <div id="location" class="reveal mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+        <div class="gold-ring rounded-2xl bg-white p-6">
+          <h4 class="font-semibold">Venue</h4>
+          <p class="text-sm text-slate-600">Sri Arunachaleswarar Temple, Tiruvannamalai, Tamil Nadu</p>
+          <a target="_blank" rel="noopener" href="https://maps.google.com/?q=Sri+Arunachaleswarar+Temple+Tiruvannamalai" class="mt-3 inline-flex rounded-full px-4 py-2 text-white" style="background: var(--theme-maroon)">Open in Google Maps</a>
+        </div>
+        <div class="gold-ring rounded-2xl bg-white p-6">
+          <h4 class="font-semibold">Venue</h4>
+          <p class="text-sm text-slate-600">Sri Arunachaleswarar Temple, Tiruvannamalai, Tamil Nadu</p>
+          <a target="_blank" rel="noopener" href="https://maps.google.com/?q=Sri+Arunachaleswarar+Temple+Tiruvannamalai" class="mt-3 inline-flex rounded-full px-4 py-2 text-white" style="background: var(--theme-maroon)">Open in Google Maps</a>
+        </div>
+        <div class="gold-ring rounded-2xl bg-white overflow-hidden">
+          <iframe title="Map" class="w-full h-64 sm:h-80" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sri%20Arunachaleswarar%20Temple%2C%20Tiruvannamalai&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="py-16 sm:py-24">
+    <div class="max-w-md mx-auto px-4 text-center reveal">
+      <h2 class="text-3xl sm:text-4xl font-bold" style="color: var(--theme-maroon)">RSVP</h2>
+      <p class="mt-3 text-slate-600">We'd love to know if you can make it! Please confirm your presence.</p>
+      <div class="mt-6 grid grid-cols-1 gap-3">
+        <a target="_blank" rel="noopener" href="https://forms.gle/your-google-form" class="rounded-full px-6 py-3 text-white font-semibold" style="background: var(--theme-maroon)">Fill Google Form</a>
+        <a target="_blank" rel="noopener" href="https://wa.me/910000000000?text=RSVP%20for%20Mouli%20%26%20Priya%20Wedding" class="rounded-full px-6 py-3 font-semibold bg-white border border-rose-200">Message on WhatsApp</a>
+      </div>
+      <p class="text-xs text-slate-500 mt-3">Replace links with your own form or number.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY
+  <section id="gallery" class="py-16 sm:py-24 bg-gradient-to-b from-rose-100 to-rose-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="reveal text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold" style="color: var(--theme-maroon)">Gallery</h2>
+        <p class="mt-3 text-slate-600">A few moments & placeholders — replace with your photos.</p>
+      </div>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <img class="rounded-xl object-cover w-full h-40" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop" alt="Gallery 1"/>
+        <img class="rounded-xl object-cover w-full h-40" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Gallery 2"/>
+        <img class="rounded-xl object-cover w-full h-40" src="https://images.unsplash.com/photo-1470321386426-0f6716d0783d?q=80&w=1200&auto=format&fit=crop" alt="Gallery 3"/>
+        <img class="rounded-xl object-cover w-full h-40" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Gallery 4"/>
+        <img class="rounded-xl object-cover w-full h-40" src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop" alt="Gallery 5"/>
+        <img class="rounded-xl object-cover w-full h-40" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Gallery 6"/>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 sm:py-24">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="reveal text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold" style="color: var(--theme-maroon)">Contact</h2>
+        <p class="mt-3 text-slate-600">Questions or special requests? Get in touch with us.</p>
+      </div>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-1 gap-4">
+        <div class="reveal gold-ring rounded-2xl bg-white p-6 text-center">
+          <p class="text-xs uppercase tracking-widest text-rose-700">Phone</p>
+          <a href="tel:+919000000000" class="mt-1 font-semibold">+91 7904907149</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-rose-200/60 text-center text-sm bg-rose-50">
+    <p>Made with ♥️ by Mouli & Kousalya • 2025</p>
+    <p class="text-xs text-slate-500 mt-1">Replace names, dates, and links with your details.</p>
+  </footer>
+
+  <!-- AUDIO (optional) -->
+  <!-- <audio id="bgm" loop>
+    <source src="/assets/soft-instrumental.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="document.getElementById('bgm').paused ? document.getElementById('bgm').play() : document.getElementById('bgm').pause()" class="fixed bottom-4 right-4 rounded-full px-4 py-2 text-white" style="background: var(--theme-maroon)">Music ♪</button> -->
+
+  <script>
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Countdown (set to local time Asia/Kolkata)
+    const target = new Date('December 1, 2025 04:30:00 GMT+0530');
+    const d = document.getElementById('d');
+    const h = document.getElementById('h');
+    const m = document.getElementById('m');
+    const s = document.getElementById('s');
+    function tick(){
+      const now = new Date();
+      let diff = Math.max(0, target - now);
+      const days = Math.floor(diff / (1000*60*60*24)); diff -= days*(1000*60*60*24);
+      const hrs  = Math.floor(diff / (1000*60*60)); diff -= hrs*(1000*60*60);
+      const mins = Math.floor(diff / (1000*60)); diff -= mins*(1000*60);
+      const secs = Math.floor(diff / 1000);
+      d.textContent = days; h.textContent = hrs; m.textContent = mins; s.textContent = secs;
+    }
+    tick(); setInterval(tick, 1000);
+  </script>
 </body>
 </html>
